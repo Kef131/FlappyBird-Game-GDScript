@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenario/Obstacule.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenario/AreaPoint.tscn" type="PackedScene" id=2]
+
+[node name="Obstacules" type="Spatial"]
+
+_sections_unfolded = [ "Transform" ]
+
+[node name="ObstaculeDown" parent="." instance=ExtResource( 1 )]
+
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 3, 0, 0, 0, 1, 0, 3.24798, 0 )
+
+[node name="ObstaculeUp" parent="." instance=ExtResource( 1 )]
+
+transform = Transform( 1, 0, 0, 0, 3, 0, 0, 0, 1, 0, 17.5894, 0 )
+
+[node name="AreaPoint" parent="." instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.8849, 0 )
+
+
